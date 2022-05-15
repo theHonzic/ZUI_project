@@ -7,4 +7,5 @@ using namespace std;
 int main() {
     Neighborhood neighborhood = Neighborhood();
     neighborhood.checkAll();
+    neighborhood.printInfo();
 }

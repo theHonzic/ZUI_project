@@ -34,6 +34,8 @@ public:
     bool checkDifferentCigarette();
     bool checkDifferentAnimal();
     bool checkDifferentAlcoholCigaretteAnimal();
+
+    void printInfo();
 };
 
 

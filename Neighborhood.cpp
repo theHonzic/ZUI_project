@@ -14,37 +14,37 @@ Neighborhood::Neighborhood() {
         cout<<"Creating house at index "<<index<<"."<<std::endl;
         index++;
     }
+/*
+    houses[0]->setAnimal("dog");
+    houses[1]->setAnimal("cat");
+    houses[2]->setAnimal("dolphin");
+    houses[3]->setAnimal("monkey");
+    houses[4]->setAnimal("donkey");
 
-    houses[0]->setAnimal("kossdfčka");
-    houses[1]->setAnimal("kočsfasfdsska");
-    houses[2]->setAnimal("kfdsočka");
-    houses[3]->setAnimal("kočafdssdfcska");
-    houses[4]->setAnimal("kodsfadfadsfsvcčka");
+    houses[0]->setDrink("coke");
+    houses[1]->setDrink("beer");
+    houses[2]->setDrink("milk");
+    houses[3]->setDrink("water");
+    houses[4]->setDrink("sprite");
 
-    houses[0]->setDrink("kočka");
-    houses[1]->setDrink("kosfdčka");
-    houses[2]->setDrink("kfdsočka");
-    houses[3]->setDrink("kosfaadffčka");
-    houses[4]->setDrink("kodsfadfadsfsvcčka");
+    houses[0]->setCigarette("dunno");
+    houses[1]->setCigarette("dont");
+    houses[2]->setCigarette("lm");
+    houses[3]->setCigarette("camel");
+    houses[4]->setCigarette("marneco");
 
-    houses[0]->setCigarette("kočka");
-    houses[1]->setCigarette("kosfdčka");
-    houses[2]->setCigarette("kfdsočka");
-    houses[3]->setCigarette("kosfaadffčka");
-    houses[4]->setCigarette("kjh");
+    houses[0]->setNationality("czech");
+    houses[1]->setNationality("slovak");
+    houses[2]->setNationality("german");
+    houses[3]->setNationality("italian");
+    houses[4]->setNationality("colombian");
 
-    houses[0]->setNationality("kočka");
-    houses[1]->setNationality("kosfdčka");
-    houses[2]->setNationality("kfdsočka");
-    houses[3]->setNationality("kosfaadffčka");
-    houses[4]->setNationality("kodsfadfadsfsvcčka");
-
-    houses[0]->setColor("kočka");
-    houses[1]->setColor("kosfdčka");
-    houses[2]->setColor("kfdsočka");
-    houses[3]->setColor("kosfaadffčka");
-    houses[4]->setColor("kjh");
-
+    houses[0]->setColor("red");
+    houses[1]->setColor("grey");
+    houses[2]->setColor("green");
+    houses[3]->setColor("yellow");
+    houses[4]->setColor("black");
+*/
 
 }
 
@@ -331,5 +331,11 @@ bool Neighborhood::checkAll() {
         return true;
     } else {
         return false;
+    }
+}
+
+void Neighborhood::printInfo() {
+    for (auto & house : houses) {
+        house->printInfo();
     }
 }

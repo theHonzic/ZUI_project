@@ -14,6 +14,7 @@
     <list default="true" id="e6c34d7c-c2a8-4d9f-a977-68b7fc82066b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Neighborhood.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Neighborhood.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neighborhood.h" beforeDir="false" afterPath="$PROJECT_DIR$/Neighborhood.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ZUI_projekt.dir/Neighborhood.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ZUI_projekt.dir/Neighborhood.cpp.o" afterDir="false" />
@@ -81,6 +82,7 @@
       <workItem from="1652609119623" duration="1497000" />
       <workItem from="1652610758532" duration="9000" />
       <workItem from="1652627910597" duration="707000" />
+      <workItem from="1652628970333" duration="232000" />
     </task>
     <servers />
   </component>
