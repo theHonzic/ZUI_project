@@ -9,15 +9,16 @@
 
 Neighborhood::Neighborhood() {
     int index = 0;
-    for (int i = 0; i < count; i++) {
-        houses[i] = new House();
+    for (auto & house : houses) {
+        house = new House();
         cout<<"Creating house at index "<<index<<"."<<std::endl;
         index++;
     }
-    houses[0]->setAnimal("kočka");
-    houses[1]->setAnimal("kočka");
+
+    houses[0]->setAnimal("kossdfčka");
+    houses[1]->setAnimal("kočsfasfdsska");
     houses[2]->setAnimal("kfdsočka");
-    houses[3]->setAnimal("kočka");
+    houses[3]->setAnimal("kočafdssdfcska");
     houses[4]->setAnimal("kodsfadfadsfsvcčka");
 
     houses[0]->setDrink("kočka");
@@ -31,6 +32,19 @@ Neighborhood::Neighborhood() {
     houses[2]->setCigarette("kfdsočka");
     houses[3]->setCigarette("kosfaadffčka");
     houses[4]->setCigarette("kjh");
+
+    houses[0]->setNationality("kočka");
+    houses[1]->setNationality("kosfdčka");
+    houses[2]->setNationality("kfdsočka");
+    houses[3]->setNationality("kosfaadffčka");
+    houses[4]->setNationality("kodsfadfadsfsvcčka");
+
+    houses[0]->setColor("kočka");
+    houses[1]->setColor("kosfdčka");
+    houses[2]->setColor("kfdsočka");
+    houses[3]->setColor("kosfaadffčka");
+    houses[4]->setColor("kjh");
+
 
 }
 
@@ -300,6 +314,22 @@ bool Neighborhood::checkDifferentAlcoholCigaretteAnimal() {
         return true;
     } else {
         std::cout<<"Every house does not have different alcohol, cigarette and animal assigned."<<std::endl;
+        return false;
+    }
+}
+
+bool Neighborhood::checkAll() {
+    bool firstConditionA = checkFiveHouses();
+    bool firstConditionB = checkFiveDifferentColors();
+    bool firstCondition = firstConditionA && firstConditionB;
+    bool secondCondition = checkFiveDifferentNationalities();
+    bool thirdCondition = checkEveryoneHasAlcoholCigaretteAnimal();
+    bool fourthCondition = checkDifferentAlcoholCigaretteAnimal();
+
+    if (firstCondition && secondCondition && thirdCondition && fourthCondition){
+        std::cout<<"All conditions are true."<<std::endl;
+        return true;
+    } else {
         return false;
     }
 }
