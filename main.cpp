@@ -11,5 +11,7 @@ int main() {
     neighborhood.checkFiveHouses();
     //1b in 5 different colors
     neighborhood.checkFiveDifferentColors();
-
+    //2 each house hosts different nationality
+    neighborhood.checkFiveDifferentNationalities();
+    neighborhood.checkEveryoneHasAlcoholCigaretteAnimal();
 }

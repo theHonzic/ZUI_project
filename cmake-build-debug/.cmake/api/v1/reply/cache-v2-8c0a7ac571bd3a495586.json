@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/the_honzic/CLionProjects/ZUI_projekt/cmake-build-debug"
+			"value" : "/Users/the_honzic/Desktop/Repositories/ZUI_project/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/the_honzic/CLionProjects/ZUI_projekt"
+			"value" : "/Users/the_honzic/Desktop/Repositories/ZUI_project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/the_honzic/CLionProjects/ZUI_projekt/cmake-build-debug"
+			"value" : "/Users/the_honzic/Desktop/Repositories/ZUI_project/cmake-build-debug"
 		},
 		{
 			"name" : "ZUI_projekt_IS_TOP_LEVEL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/the_honzic/CLionProjects/ZUI_projekt"
+			"value" : "/Users/the_honzic/Desktop/Repositories/ZUI_project"
 		}
 	],
 	"kind" : "cache",

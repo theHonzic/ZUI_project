@@ -26,6 +26,9 @@ public:
     bool checkFiveHouses();
     bool checkFiveDifferentColors();
     bool checkFiveDifferentNationalities();
+    bool checkEveryoneHasAlcohol();
+    bool checkEveryoneHasCigarette();
+    bool checkEveryoneHasAnimal();
     bool checkEveryoneHasAlcoholCigaretteAnimal();
     bool checkDifferentAlcohol();
     bool checkDifferentCigarette();

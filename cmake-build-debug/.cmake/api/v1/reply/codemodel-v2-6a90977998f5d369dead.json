@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/the_honzic/CLionProjects/ZUI_projekt/cmake-build-debug",
-		"source" : "/Users/the_honzic/CLionProjects/ZUI_projekt"
+		"build" : "/Users/the_honzic/Desktop/Repositories/ZUI_project/cmake-build-debug",
+		"source" : "/Users/the_honzic/Desktop/Repositories/ZUI_project"
 	},
 	"version" : 
 	{
