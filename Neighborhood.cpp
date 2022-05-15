@@ -385,3 +385,13 @@ void Neighborhood::setRequirements() {
     houses[4]->setNationality("nemec");
     whichHouseHasThisNationality("nemec")->setCigarette("prince");
 }
+
+House *Neighborhood::whichHouseHasFish() {
+    House* result;
+    for (House* house : houses){
+        if (house->getAnimal() == ""){
+            result = house;
+        }
+    }
+    return result;
+}

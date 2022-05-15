@@ -37,6 +37,7 @@ public:
 
     void printInfo();
     void setRequirements();
+    House* whichHouseHasFish();
 };
 
 
