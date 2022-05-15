@@ -36,6 +36,7 @@ public:
     bool checkDifferentAlcoholCigaretteAnimal();
 
     void printInfo();
+    void setRequirements();
 };
 
 

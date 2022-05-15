@@ -6,6 +6,8 @@ using namespace std;
 
 int main() {
     Neighborhood neighborhood = Neighborhood();
-    neighborhood.checkAll();
+
+    neighborhood.setRequirements();
     neighborhood.printInfo();
+    neighborhood.checkAll();
 }

@@ -46,6 +46,7 @@ Neighborhood::Neighborhood() {
     houses[4]->setColor("black");
 */
 
+
 }
 
 
@@ -228,7 +229,7 @@ bool Neighborhood::checkEveryoneHasAnimal() {
 }
 
 bool Neighborhood::checkEveryoneHasAlcoholCigaretteAnimal() {
-    if (checkEveryoneHasAlcohol() && checkEveryoneHasCigarette() && checkEveryoneHasCigarette()){
+    if (checkEveryoneHasAlcohol() && checkEveryoneHasCigarette() && checkEveryoneHasAnimal()){
         cout<<"Every house has alcohol, cigarette and animal assigned."<<std::endl;
         return true;
     } else {
@@ -338,4 +339,49 @@ void Neighborhood::printInfo() {
     for (auto & house : houses) {
         house->printInfo();
     }
+}
+
+void Neighborhood::setRequirements() {
+    //nor žije v prvním domě
+    houses[0]->setNationality("nor");
+    //nor žije vedle modrého domu
+    houses[1]->setColor("modra");
+    whichHouseHasThisColor("modra")->setLeftNeighbour(whichHouseHasThisNationality("nor"));
+    //ten, co žije ve středním domě pije mléko
+    houses[2]->setDrink("mleko");
+    houses[2]->setLeftNeighbour(houses[1]);
+    //obyvatel zeleného domu pije kávu
+    houses[3]->setColor("zelena");
+    houses[3]->setDrink("kava");
+    //zelený dům je nalevo od bílého
+    houses[4]->setColor("bila");
+    whichHouseHasThisColor("bila")->setLeftNeighbour(whichHouseHasThisColor("zelena"));
+    //angličan žije v červeném domě
+    houses[2]->setColor("cervena");
+    whichHouseHasThisColor("cervena")->setNationality("anglican");
+    //obyvatel žlutého domu kouří dunhill
+    houses[0]->setColor("zluta");
+    whichHouseHasThisColor("zluta")->setCigarette("dunhill");
+    //ten, co chová koně, žije vedle toho, kdo kouří dunhill
+    whichHouseHasThisLeftNeighbour(whichHouseHasThisCigarette("dunhill"))->setAnimal("kun");
+    //ten, co kouří blend, má souseda, který pije vodu
+    houses[0]->setDrink("voda");
+    whichHouseHasThisLeftNeighbour(whichHouseHasThisDrink("voda"))->setCigarette("blend");
+    //ten, co kouří blue master, pije pivo
+    houses[4]->setCigarette("blue master");
+    whichHouseHasThisCigarette("blue master")->setDrink("pivo");
+    //sved chova psy
+    houses[3]->setNationality("sved");
+    whichHouseHasThisNationality("sved")->setAnimal("pes");
+    //ten, co kouri pall mall, chova ptaky
+    houses[2]->setCigarette("pall mall");
+    whichHouseHasThisCigarette("pall mall")->setAnimal("ptak");
+    //dan pije caj
+    houses[1]->setNationality("dan");
+    whichHouseHasThisNationality("dan")->setDrink("caj");
+    //ten, co kouri blend zije vedle toho, kdo chova kocky
+    whichHouseHasThisRightNeighboor(whichHouseHasThisCigarette("blend"))->setAnimal("kocka");
+    //nemec kouri prince
+    houses[4]->setNationality("nemec");
+    whichHouseHasThisNationality("nemec")->setCigarette("prince");
 }
